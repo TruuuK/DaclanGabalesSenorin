@@ -77,7 +77,7 @@
                 app:cardElevation="8dp">
 
                 <ImageView
-                    android:id="@+id/Bracelet"
+                    android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -101,7 +101,7 @@
                 app:cardElevation="8dp">
 
                 <ImageView
-                    android:id="@+id/Earrings"
+                    android:id="@+id/imageView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -111,13 +111,13 @@
         </GridLayout>
 
         <TextView
-            android:id="@+id/BraceletEarrings"
+            android:id="@+id/braceletear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="fantasy"
             android:gravity="center"
             android:padding="0sp"
-            android:text="  Bracelet                  Earrings"
+            android:text="  Bracelet                 Earrings"
             android:textAllCaps="true"
             android:textColor="#F1D166"
             android:textSize="20sp" />
@@ -149,7 +149,7 @@
                 app:cardElevation="8dp">
 
                 <ImageView
-                    android:id="@+id/Necklace"
+                    android:id="@+id/imageView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -173,7 +173,7 @@
                 app:cardElevation="8dp">
 
                 <ImageView
-                    android:id="@+id/Ring"
+                    android:id="@+id/ringphoto"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -183,16 +183,19 @@
         </GridLayout>
 
         <TextView
-            android:id="@+id/Neckear"
+            android:id="@+id/Neckring"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="monospace"
+            android:fontFamily="fantasy"
             android:gravity="center"
             android:padding="0sp"
-            android:text="Necklace         Ring"
+            android:text="Necklace                       Ring"
             android:textAllCaps="true"
             android:textColor="#F1D166"
             android:textSize="20sp" />
+
+
+
 
         <TextView
             android:id="@+id/footing"

@@ -89,17 +89,21 @@ public class NDN extends AppCompatActivity implements View.OnClickListener {
 
 
 
-        resultMessage ="\n\n\n"+"Category : No Stone Necklace"+"\n"+"-------------------------------------------------------------"+
-                "\n\n\n"+"Material :"+strmaterial +"\n" + "Material Purity :"+
-                matpurity +"%"+"\n"+"Total Material Rate :"+ tmrate+"\n"
-                +"-------------------------------------------------------------"+"\n"+
-                "Total Labor Rate :" + ltr +"\n" +
-                ""+"Overhead Rate :"+ or+"%"+"\n"+
-                "-------------------------------------------------------------"+"\n"+
-                "Initial Cost :"+ic+"\n\n\n\n"+"-------------------------------------------------------------"+"\n"+
-                "Wholesale Price :"+ wholesalep+"\n"+"-------------------------------------------------------------"+"\n"+"\n\n\n\n"+
-                "-------------------------------------------------------------"+"\n"+
-                "Retail Price :"+ retail+"\n"+"-------------------------------------------------------------"+"\n";
+        resultMessage ="\n\n\n"+"-------------------------------------------------------------"+
+                "\n"+"|  Category : No Diamond Necklace"+"   |"+
+                "\n"+"-------------------------------------------------------------"+
+                "\n\n\n"+"Material :"+strmaterial +
+                "\n" + "Material Purity :"+ matpurity +"%"+
+                "\n"+"Total Material Rate :"+ tmrate+"" +
+                "\n"+"Total Labor Rate :" + ltr +
+                "\n"+"Overhead Rate :"+ or+"%"+
+                "\n\n"+"Initial Cost :"+ic+
+                "\n\n\n\n"+"-------------------------------------------------------------"+
+                "\n"+"|               Wholesale Price :"+ wholesalep+"             |"+
+                "\n"+"-------------------------------------------------------------"+
+                "\n"+"\n\n\n\n"+"-------------------------------------------------------------"+
+                "\n"+"|               Retail Price :"+ retail+"                    |"+"\n"+"-------------------------------------------------------------"+
+                "\n";
 
         // Create Bundle instance, this will allow transfer of data from Activity to DialogFragment
         Bundle args = new Bundle();

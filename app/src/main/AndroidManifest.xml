@@ -13,18 +13,60 @@
         android:theme="@style/Theme.JewelryPricing"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".DB"
+            android:exported="false" />
+        <activity
+            android:name=".DE"
+            android:exported="false" />
+        <activity
+            android:name=".DN"
+            android:exported="false" />
+        <activity
+            android:name=".DR"
+            android:exported="false" />
+        <activity
+            android:name=".NDB"
+            android:exported="false" />
+        <activity
+            android:name=".NDE"
+            android:exported="false" />
+        <activity
+            android:name=".NDN"
+            android:exported="false" />
+        <activity
+            android:name=".NDR"
+            android:exported="false" />
+
+        <activity
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BBB"
+            android:exported="false" />
+        <activity
+            android:name=".EEE"
+            android:exported="false" />
+        <activity
+            android:name=".NNN"
+            android:exported="false" />
+        <activity
+            android:name=".RRR"
+            android:exported="false" />
+        <activity
+            android:name=".chart"
+            android:exported="false" />
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-        </activity>
     </application>
 
 </manifest>

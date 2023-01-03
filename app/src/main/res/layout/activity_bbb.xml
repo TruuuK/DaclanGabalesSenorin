@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="BBB"
     android:orientation="horizontal"
-    android:background="@color/black">
+    android:background="#0D98BA">
 
 
     <TextView
@@ -23,7 +23,9 @@
 
     <ListView
         android:id="@+id/list_view"
-        android:layout_marginTop="80sp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80sp"
+        android:background="#0D98BA"
+        android:textColor="#F1D166" />
 </RelativeLayout>

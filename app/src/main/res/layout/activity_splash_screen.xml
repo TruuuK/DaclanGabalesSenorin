@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#0D98BA"
     tools:context=".SplashScreen">
 
     <ImageView
         android:id="@+id/Logo"
-        android:layout_width="483dp"
-        android:layout_height="765dp"
+        android:layout_width="397dp"
+        android:layout_height="742dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

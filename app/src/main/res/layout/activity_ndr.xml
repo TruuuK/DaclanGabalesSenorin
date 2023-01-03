@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#000000"
+        android:background="#0D98BA"
         tools:context=".NoGemCal">
 
 
@@ -16,8 +16,7 @@
             android:id="@+id/textView2"
             android:layout_width="160dp"
             android:layout_height="48dp"
-            android:background="#000000"
-            android:fontFamily="sans-serif-light"
+            android:fontFamily="sans-serif-black"
             android:gravity="center|left"
             android:text="@string/enter_material"
             android:textColor="#F1D166"
@@ -33,11 +32,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:backgroundTint="#F1D166"
-            android:fontFamily="sans-serif-medium"
+            android:fontFamily="sans-serif-black"
             android:text="@string/calculate"
             android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.8"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Enteroverhead1" />
 
@@ -46,8 +44,7 @@
             android:layout_width="160dp"
             android:layout_height="48dp"
             android:layout_marginTop="16dp"
-            android:background="#000000"
-            android:fontFamily="sans-serif-light"
+            android:fontFamily="sans-serif-black"
             android:gravity="center|left"
             android:text="@string/enter_labor_cost"
             android:textColor="#F1D166"
@@ -80,8 +77,7 @@
             android:layout_width="160dp"
             android:layout_height="48dp"
             android:layout_marginTop="16dp"
-            android:background="#000000"
-            android:fontFamily="sans-serif-light"
+            android:fontFamily="sans-serif-black"
             android:gravity="center|left"
             android:text="@string/enter_labor_hours"
             android:textColor="#F1D166"
@@ -132,8 +128,7 @@
             android:layout_width="160dp"
             android:layout_height="48dp"
             android:layout_marginTop="16dp"
-            android:background="#000000"
-            android:fontFamily="sans-serif-light"
+            android:fontFamily="sans-serif-black"
             android:gravity="center|left"
             android:text="@string/enter_weight"
             android:textColor="#F1D166"
@@ -148,8 +143,7 @@
             android:layout_width="160dp"
             android:layout_height="48dp"
             android:layout_marginTop="16dp"
-            android:background="#000000"
-            android:fontFamily="sans-serif-light"
+            android:fontFamily="sans-serif-black"
             android:gravity="center|left"
             android:text="@string/enter_purity"
             android:textColor="#F1D166"
@@ -164,8 +158,7 @@
             android:layout_width="160dp"
             android:layout_height="48dp"
             android:layout_marginTop="16dp"
-            android:background="#000000"
-            android:fontFamily="sans-serif-light"
+            android:fontFamily="sans-serif-black"
             android:gravity="center|left"
             android:text="@string/enter_overhead"
             android:textColor="#F1D166"
@@ -251,8 +244,7 @@
             android:layout_width="160dp"
             android:layout_height="48dp"
             android:layout_marginTop="16dp"
-            android:background="#000000"
-            android:fontFamily="sans-serif-light"
+            android:fontFamily="sans-serif-black"
             android:gravity="center|left"
             android:text="@string/enter_price"
             android:textColor="#F1D166"
@@ -262,32 +254,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
+
         <TextView
             android:id="@+id/Nogemhead"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="#000000"
             android:fontFamily="cursive"
-            android:text="@string/no_stone"
+            android:text="Ring"
             android:textColor="#F1D166"
             android:textSize="55sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.225"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="81dp"
-            android:layout_height="62dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.912"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.017"
-            app:srcCompat="@drawable/gemtable" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -297,7 +276,19 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/nostonering" />
+            app:srcCompat="@drawable/ndr" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="45dp"
+            android:layout_height="46dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.919"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.018"
+            app:srcCompat="@drawable/menu" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
