@@ -9,14 +9,14 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class NDB extends AppCompatActivity implements View.OnClickListener {
+public class NDN extends AppCompatActivity implements View.OnClickListener {
     EditText Entermaterial1, Enterprice1, purity, Enterweight1, Enterhours1, laborhours, Enteroverhead1 ;
     String strmaterial, strprice, strpurity, strweight, strhours, strlaorhours, stroverhead, resultMessage;
     ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ndb);
+        setContentView(R.layout.activity_ndn);
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(this);
 
@@ -25,7 +25,7 @@ public class NDB extends AppCompatActivity implements View.OnClickListener {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NDB.this,chart.class);
+                Intent intent = new Intent(NDN.this,chart.class);
                 startActivity(intent);
 
             }
@@ -89,7 +89,7 @@ public class NDB extends AppCompatActivity implements View.OnClickListener {
 
 
 
-        resultMessage ="\n\n\n"+"Category : No Stone Bracelet"+"\n"+"-------------------------------------------------------------"+
+        resultMessage ="\n\n\n"+"Category : No Stone Necklace"+"\n"+"-------------------------------------------------------------"+
                 "\n\n\n"+"Material :"+strmaterial +"\n" + "Material Purity :"+
                 matpurity +"%"+"\n"+"Total Material Rate :"+ tmrate+"\n"
                 +"-------------------------------------------------------------"+"\n"+

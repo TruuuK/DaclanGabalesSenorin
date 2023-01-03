@@ -9,14 +9,14 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class DB extends AppCompatActivity implements View.OnClickListener{
+public class DN extends AppCompatActivity implements View.OnClickListener{
 
     EditText Entermateriald, Enterpriced, purityd, Enterweightd, Enterhoursd, laborhoursd, Enteroverheadd, caratd, caratpriced;
     String strmaterial, strprice, strpurity, strweight, strhours, strlaorhours, stroverhead,strcarat, resultMessage, strcaratpriced;    ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_db);
+        setContentView(R.layout.activity_dn);
 
         Button button = findViewById(R.id.button);
         button.setOnClickListener(this);
@@ -26,7 +26,7 @@ public class DB extends AppCompatActivity implements View.OnClickListener{
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DB.this,chart.class);
+                Intent intent = new Intent(DN.this,chart.class);
                 startActivity(intent);
 
             }
@@ -96,7 +96,7 @@ public class DB extends AppCompatActivity implements View.OnClickListener{
         double retail = wholesalep*2.5;
         double result = retail;
 
-        resultMessage ="\n\n\n"+"Category : Diamond Bracelet"+"\n"+"-------------------------------------------------------------"+
+        resultMessage ="\n\n\n"+"Category : Diamond Necklace"+"\n"+"-------------------------------------------------------------"+
                 "\n\n\n"+"Diamond Carat: "+dcarat+"\n"+"Diamond Price Today :"+strcaratpriced+"\n"+"-------------------------------------------------------------"+"\n"+"Total Diamond Price :"+carattotal+"\n\n\n"+"Material :"+strmaterial +"\n" + "Material Purity :"+
                 matpurity +"%"+"\n"+"Total Material Rate :"+ tmrate+"\n"
                 +"-------------------------------------------------------------"+"\n"+

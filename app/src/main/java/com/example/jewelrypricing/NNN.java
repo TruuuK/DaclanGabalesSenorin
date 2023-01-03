@@ -33,11 +33,9 @@ public class NNN extends AppCompatActivity {
 
         listView.setOnItemClickListener((parent, view, position, id) -> {
             if(position==0){
-                startActivity(new Intent(NNN.this,NoGemCalN.class));
+                startActivity(new Intent(NNN.this,NDN.class));
             }else if(position==1){
-                startActivity(new Intent(NNN.this,DiamondCalN.class));
-            }else if(position==2){
-                startActivity(new Intent(NNN.this,GemCalN.class));
+                startActivity(new Intent(NNN.this,DN.class));
             }
         });
     }
@@ -49,7 +47,7 @@ public class NNN extends AppCompatActivity {
         int[] rImgs;
 
         MyAdapter (Context c, String[] title, int[] imgs) {
-            super(c, R.layout.rlist, R.id.textView1, title);
+            super(c, R.layout.topborder, R.id.textView1, title);
             this.context = c;
             this.rTitle = title;
             this.rImgs = imgs;
@@ -60,14 +58,14 @@ public class NNN extends AppCompatActivity {
         @Override
         public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
             LayoutInflater layoutInflater = (LayoutInflater)getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View rlist = layoutInflater.inflate(R.layout.rlist, parent, false);
-            ImageView images = rlist.findViewById(R.id.image);
-            TextView myTitle = rlist.findViewById(R.id.textView1);
+            View topborder = layoutInflater.inflate(R.layout.topborder, parent, false);
+            ImageView images = topborder.findViewById(R.id.image);
+            TextView myTitle = topborder.findViewById(R.id.textView1);
 
             images.setImageResource(rImgs[position]);
             myTitle.setText(rTitle[position]);
 
-            return rlist;
+            return topborder;
         }
     }
 }

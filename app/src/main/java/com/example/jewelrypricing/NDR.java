@@ -9,14 +9,14 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class NDB extends AppCompatActivity implements View.OnClickListener {
+public class NDR extends AppCompatActivity implements View.OnClickListener {
     EditText Entermaterial1, Enterprice1, purity, Enterweight1, Enterhours1, laborhours, Enteroverhead1 ;
     String strmaterial, strprice, strpurity, strweight, strhours, strlaorhours, stroverhead, resultMessage;
     ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ndb);
+        setContentView(R.layout.activity_ndr);
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(this);
 
@@ -25,7 +25,7 @@ public class NDB extends AppCompatActivity implements View.OnClickListener {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NDB.this,chart.class);
+                Intent intent = new Intent(NDR.this,chart.class);
                 startActivity(intent);
 
             }
@@ -89,7 +89,7 @@ public class NDB extends AppCompatActivity implements View.OnClickListener {
 
 
 
-        resultMessage ="\n\n\n"+"Category : No Stone Bracelet"+"\n"+"-------------------------------------------------------------"+
+        resultMessage ="\n\n\n"+"Category : No Stone Ring"+"\n"+"-------------------------------------------------------------"+
                 "\n\n\n"+"Material :"+strmaterial +"\n" + "Material Purity :"+
                 matpurity +"%"+"\n"+"Total Material Rate :"+ tmrate+"\n"
                 +"-------------------------------------------------------------"+"\n"+
@@ -101,19 +101,19 @@ public class NDB extends AppCompatActivity implements View.OnClickListener {
                 "-------------------------------------------------------------"+"\n"+
                 "Retail Price :"+ retail+"\n"+"-------------------------------------------------------------"+"\n";
 
-        // Create Bundle instance, this will allow transfer of data from Activity to DialogFragment
-        Bundle args = new Bundle();
+    // Create Bundle instance, this will allow transfer of data from Activity to DialogFragment
+    Bundle args = new Bundle();
         args.putString("result", resultMessage);
 
-        // Create a dialog instance
-        DialogFragmentCustom dialogFragmentImp = new DialogFragmentCustom();
-        // Pass on dialog argument(args), the result
+    // Create a dialog instance
+    DialogFragmentCustom dialogFragmentImp = new DialogFragmentCustom();
+    // Pass on dialog argument(args), the result
         dialogFragmentImp.setArguments(args);
-        // Display the Dialog
+    // Display the Dialog
         dialogFragmentImp.show(getSupportFragmentManager(),"Display Result");
-        // Reset EditTexts
-        clearEditText();
-    }
+    // Reset EditTexts
+    clearEditText();
+}
     public void clearEditText(){
         Entermaterial1.getText().clear();
         Enterprice1.getText().clear();

@@ -33,11 +33,9 @@ public class RRR extends AppCompatActivity {
 
            listView.setOnItemClickListener((parent, view, position, id) -> {
                if(position==0){
-                   startActivity(new Intent(RRR.this,NoGemCal.class));
+                   startActivity(new Intent(RRR.this,NDR.class));
                }else if(position==1){
-                   startActivity(new Intent(RRR.this,DiamondCal.class));
-               }else if(position==2){
-                   startActivity(new Intent(RRR.this,GemCal.class));
+                   startActivity(new Intent(RRR.this,DR.class));
                }
            });
     }
@@ -49,7 +47,7 @@ public class RRR extends AppCompatActivity {
         int[] rImgs;
 
         MyAdapter (Context c, String[] title, int[] imgs) {
-            super(c, R.layout.rlist, R.id.textView1, title);
+            super(c, R.layout.topborder, R.id.textView1, title);
             this.context = c;
             this.rTitle = title;
             this.rImgs = imgs;
@@ -60,14 +58,14 @@ public class RRR extends AppCompatActivity {
         @Override
         public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
             LayoutInflater layoutInflater = (LayoutInflater)getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View rlist = layoutInflater.inflate(R.layout.rlist, parent, false);
-            ImageView images = rlist.findViewById(R.id.image);
-            TextView myTitle = rlist.findViewById(R.id.textView1);
+            View topborder = layoutInflater.inflate(R.layout.topborder, parent, false);
+            ImageView images = topborder.findViewById(R.id.image);
+            TextView myTitle = topborder.findViewById(R.id.textView1);
 
             images.setImageResource(rImgs[position]);
             myTitle.setText(rTitle[position]);
 
-            return rlist;
+            return topborder;
         }
     }
 }
